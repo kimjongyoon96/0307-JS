@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  #bar{
+    width:"100%";
+    height:"35px";
+    background-color: green;
+  }
+
+
+  </style>
+</head>
+<body>
+  <div id="root">
+  <div id="bar"></div>
+   <div id="bottom"></div>
+  </div>
+<script>
+// 함수를 시작하겠다.. hplose(피감소)를 말할것이다.
+// 피감소라는 펑션이고, 함수안에 ()는 파라미터이다. 즉 매개변수
+
+function hplose(hp){
+
+hp.style.alignItems="center";
+hp.style.width="50%";
+hp.style.height="35px";
+hp.style.display="flex";
+hp.style.background="red";
+
+}
+// 두번째 함수이다. 피증가를 말할것이다.
+// 피증가라는 펑션이고, 함수안에 ()는 매개변수이다.
+function hpfull(hpf){
+    hpf.style.width="100%";
+    hpf.style.height="35px";
+    hpf.style.display="flex";
+    hpf.style.background="green";
+    }
+    // 피증가와 피감소 함수의 요소를 확인하고 싶다.
+    console.log(hplose);
+    console.log(hpfull);
+
+    
+ let barTag = document.getElementById("bar");
+     hplose(barTag)
+
+
+
+
+
+
+</script>
+</body>
+</html>
